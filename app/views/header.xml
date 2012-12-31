@@ -1,0 +1,17 @@
+<Alloy>
+  <View id="header"> 
+
+    <View id="profile">
+      <ImageView id="profileImage"/>
+    </View>
+
+    <View id="logo">
+      <ImageView id="smallLogo"/>
+    </View>
+    
+    <View id="add">
+      <Button id="addImage"></Button>
+    </View>
+
+  </View>
+</Alloy>

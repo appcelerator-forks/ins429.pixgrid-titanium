@@ -1,0 +1,31 @@
+".container": {
+  backgroundColor:"white",
+  width: '100%',
+  height: '100%'
+},
+
+"Label": {
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  color: "#000"
+},
+
+TextField: {
+  autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+  borderStyle:Ti.UI.INPUT_BORDERSTYLE_NONE,
+  autocorrect: false,
+  top:'4dp',
+  left:'4dp',
+  bottom:'4dp',
+  right:'4dp',
+  paddingLeft:'1dp',
+  paddingRight:'1dp'
+},
+
+TextArea: {
+  autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+  borderStyle:Ti.UI.INPUT_BORDERSTYLE_NONE,
+  autocorrect: false,
+  paddingLeft:'1dp',
+  paddingRight:'1dp'
+}

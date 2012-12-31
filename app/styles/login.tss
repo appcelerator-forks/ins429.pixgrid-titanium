@@ -1,0 +1,139 @@
+".container": {
+  backgroundColor:"#efeeef"
+},
+
+"Label": {
+  width: Ti.UI.SIZE,
+  height: Ti.UI.SIZE,
+  color: "#000"
+},
+
+'#logo': {
+  height:'150dp',
+  width:'210dp',
+  top:'10dp',
+  bottom:0,
+  image:'/images/logo.png'
+},
+
+'.loginContainer': {
+  height:'480dp',
+  width:'320dp'
+},
+
+'#loginContents': {
+  layout:'vertical',
+  backgroundColor:'#efeeef',
+  top:'10dp',
+  width:'320dp',
+  height:'480dp'
+},
+
+'#loginHelp': {
+  textAlign:'center',
+  font:{
+    fontSize:'14dp',
+    fontFamily:'Quicksand'
+  }
+},
+
+'#emailWrapper': {
+  backgroundColor:'white',
+  top:'10dp',
+  width:'300dp',
+  height:'36dp',
+  borderColor:'#585858',
+  borderRadius:'3'
+},
+
+'#email': {
+  backgroundColor:'white',
+  keyboardType:Ti.UI.KEYBOARD_EMAIL,
+  hintText:'email',
+  width:'280dp',
+  height:'30dp',
+  top:'3dp',
+  bottom:'3dp',
+  left:'10dp',
+  right:'10dp'
+},
+
+'#passwordWrapper': {
+  backgroundColor:'white',
+  top:'30dp',
+  width:'300dp',
+  height:'36dp',
+  borderColor:'#585858',
+  borderRadius:'3'
+},
+
+'#password': {
+  passwordMask:true,
+  keyboardType:Ti.UI.KEYBOARD_DEFAULT,
+  hintText:'••••',
+  width:'280dp',
+  height:'30dp',
+  top:'3dp',
+  bottom:'3dp',
+  left:'10dp',
+  right:'10dp'
+},
+
+'#loginB': {
+  top:'10dp',
+  width:'200dp',
+  height:'33dp'
+},
+
+'#signupB': {
+  top:'10dp',
+  width:'200dp',
+  height:'33dp'
+},
+
+'#loginBtn': {
+  width:'200dp',
+  height:'33dp',
+  font: {
+    fontFamily:'Helvetica Neue',
+    fontSize:'18dp',
+    fontWeight:'bold'
+  },
+  backgroundImage:'/images/login.png'
+},
+
+'#signupBtn': {
+  width:'200dp',
+  height:'33dp',
+  font: {
+    fontFamily:'Helvetica Neue',
+    fontSize:'18dp',
+    fontWeight:'bold'
+  },
+  backgroundImage:'/images/signup.png'
+},
+
+'#border': {
+  top:'10dp',
+  width:'100%',
+  height:'2px'
+},
+
+'#borderT': {
+  width:'100%',
+  height:'1px',
+  borderTop:false,
+  borderBottom:true,
+  borderWidth:'1px',
+  borderColor:'#666'
+},
+
+'#borderB': {
+  top:'2px',
+  width:'100%',
+  height:'1px',
+  borderTop:false,
+  borderBottom:true,
+  borderWidth:'1px',
+  borderColor:'#fff'
+}

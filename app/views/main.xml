@@ -1,0 +1,33 @@
+<Alloy>
+  <View id="main">
+    <Require id="header" src="header"/>
+    <View id="content">
+      <ScrollView id="phtSV">
+        <View id="photosList">
+        </View>
+      </ScrollView>
+    </View>
+    
+    <View id="imagePreview">
+      <View class="shdw"></View>
+      <ImageView id="preview"/>
+      <View id="sbmcnl">
+        <Button id="submitBtn">Submit</Button>
+        <Button id="cancelBtn">Cancel</Button>
+      </View>
+    </View>
+
+    <View id="imageViewCtnr">
+      <View id="clsImgView">
+        <Button id="clsBtn"></Button>
+      </View>
+      <View class="shdw"></View>
+      <ImageView id="img"/>
+      <View>
+        <ImageView id="viewLeft"/>
+        <ImageView id="removeBtn"/>
+        <ImageView id="viewRight"/>
+      </View>
+    </View>
+  </View>
+</Alloy>

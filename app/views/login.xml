@@ -1,0 +1,23 @@
+<Alloy>
+  <View id="login" class="loginContainer">
+    <View id="loginContents">
+      <ImageView id="logo"/>
+      <View id="emailWrapper">
+        <TextField id="email"/>
+      </View>
+      <View id="passwordWrapper">
+        <TextField id="password"/>
+      </View>
+      <View id="loginB">
+        <Button id="loginBtn">Login</Button>
+      </View>
+      <View id="border">
+        <View id="borderT"></View>
+        <View id="borderB"></View>
+      </View>
+      <View id="signupB">
+        <Button id="signupBtn">Sign up</Button>
+      </View>
+    </View>
+  </View>
+</Alloy>

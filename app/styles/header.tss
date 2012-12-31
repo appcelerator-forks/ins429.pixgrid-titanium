@@ -1,0 +1,47 @@
+'#header': {
+  backgroundColor:'#ccc',
+  height:'40dp',
+  width:Ti.UI.FILL,
+  top:0
+},
+
+'#logo': {
+  height:'30dp',
+  width:'100dp'
+},
+
+'#smallLogo': {
+  height:'30dp',
+  width:'100dp',
+  touchEnabled:true,
+  image:'/images/sm-logo.png',
+  zIndex:3
+},
+
+'#add': {
+  height:'30dp',
+  width:'63dp',
+  right:0
+},
+
+'#addImage': {
+  height:'30dp',
+  width:'53dp',
+  right:'5dp',
+  touchEnabled:true,
+  image:'/images/add.png'
+},
+
+'#profile': {
+  height:'30dp',
+  width:'42dp',
+  left:0
+},
+
+'#profileImage': {
+  height:'30dp',
+  width:'42dp',
+  left:'5dp',
+  touchEnabled:true,
+  image:'/images/usr.png'
+}
