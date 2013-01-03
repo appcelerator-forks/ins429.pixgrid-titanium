@@ -49,14 +49,14 @@ function Controller() {
         id: "imagePreview"
     }), "View", $.__views.main);
     $.__views.main.add($.__views.imagePreview);
-    $.__views.__alloyId1 = A$(Ti.UI.createView({
+    $.__views.__alloyId2 = A$(Ti.UI.createView({
         opacity: 0.8,
         width: "90%",
         height: "90%",
         backgroundColor: "#484850",
-        id: "__alloyId1"
+        id: "__alloyId2"
     }), "View", $.__views.imagePreview);
-    $.__views.imagePreview.add($.__views.__alloyId1);
+    $.__views.imagePreview.add($.__views.__alloyId2);
     $.__views.preview = A$(Ti.UI.createImageView({
         width: Ti.UI.FILL,
         height: Ti.UI.SIZE,
@@ -66,13 +66,13 @@ function Controller() {
     $.__views.sbmcnl = A$(Ti.UI.createView({
         width: "200dp",
         height: "26dp",
-        bottom: "5%",
+        bottom: "7%",
         id: "sbmcnl"
     }), "View", $.__views.imagePreview);
     $.__views.imagePreview.add($.__views.sbmcnl);
     $.__views.submitBtn = A$(Ti.UI.createButton({
-        width: "100dp",
-        height: "26dp",
+        width: "90dp",
+        height: "24dp",
         font: {
             fontFamily: "Helvetica Neue",
             fontSize: "14dp",
@@ -85,8 +85,8 @@ function Controller() {
     }), "Button", $.__views.sbmcnl);
     $.__views.sbmcnl.add($.__views.submitBtn);
     $.__views.cancelBtn = A$(Ti.UI.createButton({
-        width: "100dp",
-        height: "26dp",
+        width: "90dp",
+        height: "24dp",
         font: {
             fontFamily: "Helvetica Neue",
             fontSize: "14dp",
@@ -124,24 +124,24 @@ function Controller() {
         id: "clsBtn"
     }), "Button", $.__views.clsImgView);
     $.__views.clsImgView.add($.__views.clsBtn);
-    $.__views.__alloyId2 = A$(Ti.UI.createView({
+    $.__views.__alloyId3 = A$(Ti.UI.createView({
         opacity: 0.8,
         width: "90%",
         height: "90%",
         backgroundColor: "#484850",
-        id: "__alloyId2"
+        id: "__alloyId3"
     }), "View", $.__views.imageViewCtnr);
-    $.__views.imageViewCtnr.add($.__views.__alloyId2);
+    $.__views.imageViewCtnr.add($.__views.__alloyId3);
     $.__views.img = A$(Ti.UI.createImageView({
         width: "85%",
         height: "85%",
         id: "img"
     }), "ImageView", $.__views.imageViewCtnr);
     $.__views.imageViewCtnr.add($.__views.img);
-    $.__views.__alloyId3 = A$(Ti.UI.createView({
-        id: "__alloyId3"
+    $.__views.__alloyId4 = A$(Ti.UI.createView({
+        id: "__alloyId4"
     }), "View", $.__views.imageViewCtnr);
-    $.__views.imageViewCtnr.add($.__views.__alloyId3);
+    $.__views.imageViewCtnr.add($.__views.__alloyId4);
     $.__views.viewLeft = A$(Ti.UI.createImageView({
         width: "20dp",
         height: "20dp",
@@ -149,12 +149,12 @@ function Controller() {
         left: "10%",
         backgroundImage: "/images/left.png",
         id: "viewLeft"
-    }), "ImageView", $.__views.__alloyId3);
-    $.__views.__alloyId3.add($.__views.viewLeft);
+    }), "ImageView", $.__views.__alloyId4);
+    $.__views.__alloyId4.add($.__views.viewLeft);
     $.__views.removeBtn = A$(Ti.UI.createImageView({
         id: "removeBtn"
-    }), "ImageView", $.__views.__alloyId3);
-    $.__views.__alloyId3.add($.__views.removeBtn);
+    }), "ImageView", $.__views.__alloyId4);
+    $.__views.__alloyId4.add($.__views.removeBtn);
     $.__views.viewRight = A$(Ti.UI.createImageView({
         width: "20dp",
         height: "20dp",
@@ -162,8 +162,8 @@ function Controller() {
         right: "10%",
         backgroundImage: "/images/right.png",
         id: "viewRight"
-    }), "ImageView", $.__views.__alloyId3);
-    $.__views.__alloyId3.add($.__views.viewRight);
+    }), "ImageView", $.__views.__alloyId4);
+    $.__views.__alloyId4.add($.__views.viewRight);
     _.extend($, $.__views);
     var Cloud = require("ti.cloud");
     Alloy.Globals.imagePreview = $.imagePreview;
@@ -174,7 +174,8 @@ function Controller() {
         Cloud.Photos.query({
             page: 1,
             per_page: 1000,
-            order: "-updated_at"
+            order: "-updated_at",
+            where: "{\"user_id\":\"" + Alloy.Globals.user.id + "\"}"
         }, function(e) {
             if (e.success) {
                 var data = [];

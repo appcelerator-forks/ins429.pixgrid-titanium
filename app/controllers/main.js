@@ -10,7 +10,8 @@ $.init = function() {
   Cloud.Photos.query({
     page: 1,
     per_page: 1000,
-    order: '-updated_at'
+    order: '-updated_at',
+    where:"{\"user_id\":\""+Alloy.Globals.user.id+"\"}"
   }, function (e) {
     if (e.success) {
       var data = [];

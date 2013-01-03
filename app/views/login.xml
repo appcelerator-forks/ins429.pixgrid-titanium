@@ -19,5 +19,34 @@
         <Button id="signupBtn">Sign up</Button>
       </View>
     </View>
+
+    <ScrollView id="signupContents">
+      <ImageView class="logo"/>
+      <View id="emailWrapperA">
+        <TextField id="emailA"/>
+      </View>
+      <View id="passwordWrapperA">
+        <TextField id="passwordA"/>
+      </View>
+      <View id="passwordConfirmWrapper">
+        <TextField id="passwordConfirm"/>
+      </View>
+      <View id="firstNameWrapper">
+        <TextField id="firstName"/>
+      </View>
+      <View id="lastNameWrapper">
+        <TextField id="lastName"/>
+      </View>
+      <View id="signupBA">
+        <Button id="signupBtnA">Sign up</Button>
+      </View>
+      <View id="border">
+        <View id="borderT"></View>
+        <View id="borderB"></View>
+      </View>
+      <View id="loginBA">
+        <Button id="loginBtnA">Login</Button>
+      </View>
+    </ScrollView>
   </View>
 </Alloy>
